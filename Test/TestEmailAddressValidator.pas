@@ -23,6 +23,8 @@ type
   public
     procedure SetUp; override;
     procedure TearDown; override;
+    // To enable this test make it 'published'
+    procedure testEmailFromPerl;
   published
     procedure testEmail;
     procedure testEmailWithNumericAddress;
@@ -34,7 +36,6 @@ type
     procedure testEmailWithSpaces;
     procedure testEmailWithControlChars;
     procedure testEmailUserName;
-    procedure testEmailFromPerl;
     procedure testValidator293;
   end;
 
