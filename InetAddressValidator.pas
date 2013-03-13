@@ -57,8 +57,8 @@ var
 begin
   Match := ipv4Validator.Match(inet4Address);
 
-  // if Match.Groups.Count <> 4 then
-  // Exit(false);
+  if not Match.Success then
+    Exit(false);
 
   IpSegment := 0;
   for i := 1 to Match.Groups.Count - 1 do
